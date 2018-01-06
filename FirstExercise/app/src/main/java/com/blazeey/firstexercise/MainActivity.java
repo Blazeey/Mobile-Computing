@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity implements DatePickerDialog.
         context = this;
         dialog = new DatePickerDialog(context,MainActivity.this,2017,0,1);
         timePickerDialog = new TimePickerDialog(context,this,0,0,true);
-        FloatingActionButton button = (FloatingActionButton)findViewById(R.id.fab);
+        FloatingActionButton button = findViewById(R.id.fab);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -68,6 +68,7 @@ public class MainActivity extends AppCompatActivity implements DatePickerDialog.
                 Intent intent = new Intent(MainActivity.this,DetailsActivity.class);
 
                 calendar.set(year,month,dayOfMonth,hourOfDay,minute);
+
                 Bundle bundle = new Bundle();
                 bundle.putString("name",String.valueOf(name.getText()));
                 bundle.putString("address",String.valueOf(address.getText()));
@@ -103,7 +104,7 @@ public class MainActivity extends AppCompatActivity implements DatePickerDialog.
         address = findViewById(R.id.address);
         number = findViewById(R.id.number);
 
-        gender = (RadioGroup) findViewById(R.id.gender);
+        gender =  findViewById(R.id.gender);
         spinner = findViewById(R.id.spinner);
 
         smoking = findViewById(R.id.smoking);
