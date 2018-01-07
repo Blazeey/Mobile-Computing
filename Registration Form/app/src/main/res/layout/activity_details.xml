@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.blazeey.registrationform.DetailsActivity">
+
+    <TableRow
+        android:padding="10dp">
+
+        <TextView
+            android:text="Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_column="1"/>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_column="2"/>
+
+    </TableRow>
+
+    <TableRow
+        android:padding="10dp">
+
+        <TextView
+            android:text="Address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_column="1"/>
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_column="2"/>
+
+    </TableRow>
+
+    <TableRow
+        android:padding="10dp">
+
+        <TextView
+            android:text="Age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_column="1"/>
+
+        <TextView
+            android:id="@+id/age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_column="2"/>
+
+    </TableRow>
+
+    <TableRow
+        android:padding="10dp">
+
+        <TextView
+            android:text="Number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_column="1"/>
+
+        <TextView
+            android:id="@+id/number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_column="2"/>
+
+    </TableRow>
+
+    <TableRow
+        android:padding="10dp">
+
+        <TextView
+            android:text="Time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_column="1"/>
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_column="2"/>
+
+    </TableRow>
+
+    <TableRow
+        android:padding="10dp">
+
+        <TextView
+            android:text="Gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_column="1"/>
+
+        <TextView
+            android:id="@+id/gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_column="2"/>
+
+    </TableRow>
+
+    <TableRow
+        android:padding="10dp">
+
+        <TextView
+            android:text="Marital Status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_column="1"/>
+
+        <TextView
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_column="2"/>
+
+    </TableRow>
+
+    <TableRow
+        android:padding="10dp">
+
+        <TextView
+            android:text="Smoking"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_column="1"/>
+
+        <TextView
+            android:id="@+id/smoking"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_column="2"/>
+
+    </TableRow>
+
+    <TableRow
+        android:padding="10dp">
+
+        <TextView
+            android:text="Alcohol"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_column="1"/>
+
+        <TextView
+            android:id="@+id/alcohol"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_column="2"/>
+
+    </TableRow>
+
+</TableLayout>

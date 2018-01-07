@@ -1,8 +1,0 @@
-<resources>
-    <string name="app_name">Government Hospital</string>
-    <string-array name="martial">
-        <item>Single</item>
-        <item>Married</item>
-        <item>Complicated</item>
-    </string-array>
-</resources>
