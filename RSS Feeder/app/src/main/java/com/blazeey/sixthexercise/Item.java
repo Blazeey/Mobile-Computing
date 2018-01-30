@@ -1,6 +1,6 @@
 package com.blazeey.sixthexercise;
 
-import java.net.URI;
+import java.net.URL;
 
 /**
  * Created by venki on 7/1/18.
@@ -9,12 +9,12 @@ import java.net.URI;
 public class Item {
     private String title;
     private String description;
-    private URI uri;
+    private URL url;
 
-    public Item(String title, String description, URI uri) {
+    public Item(String title, String description, URL url) {
         this.title = title;
         this.description = description;
-        this.uri = uri;
+        this.url = url;
     }
 
     public String getTitle() {
@@ -33,12 +33,11 @@ public class Item {
         this.description = description;
     }
 
-    public URI getUri() {
-        return uri;
+    public URL getUrl() {
+        return url;
     }
 
-    public void setUri(URI uri) {
-        this.uri = uri;
+    public void setUrl(URL url) {
+        this.url = url;
     }
-
 }

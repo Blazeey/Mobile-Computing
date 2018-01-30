@@ -18,9 +18,10 @@ public class MainActivity extends AppCompatActivity {
 
         try {
 
-            XMLParser xmlParser = new XMLParser(new URL("http://xkcd.com/rss.xml"));
+            XMLParser xmlParser = new XMLParser(new URL("http://www.bitnewz.net/rss/feed/10"));
             xmlParser.startParse();
             itemList = xmlParser.getItemList();
+
 
             Toast.makeText(this, "" + itemList.size(), Toast.LENGTH_SHORT).show();
         } catch (MalformedURLException e) {

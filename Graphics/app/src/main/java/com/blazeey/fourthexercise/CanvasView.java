@@ -19,6 +19,7 @@ public class CanvasView extends View {
     private Canvas canvas;
     private Context context;
     private float scaleX = 1,scaleY = 1,rotate = 0;
+    private boolean incrementFlag = true;
 
     public CanvasView(Context context) {
         super(context);
@@ -34,14 +35,23 @@ public class CanvasView extends View {
         this.canvas = canvas;
 
         scaleAndRotate();
-        scaleX+=0.002;
-        scaleY+=0.002;
+        if(incrementFlag) {
+            scaleX += 0.002;
+            scaleY += 0.002;
+        }
+        else {
+            scaleX -= 0.002;
+            scaleY -= 0.002;
+        }
         canvas.save();
         if(scaleX>2&&scaleY>2){
-            scaleX = 1;
-            scaleY = 1;
+            incrementFlag = false;
         }
-        rotate+=0.6;
+        if(scaleX<1&&scaleY<1){
+            incrementFlag = true;
+        }
+        rotate += 0.6;
+
     }
 
     public void draw(){
