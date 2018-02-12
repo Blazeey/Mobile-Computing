@@ -1,0 +1,49 @@
+<rss version="2.0">
+    <channel>
+        <item>
+            <title>FeedForAll Sample Feed</title>
+            <description>RSS is a fascinating technology. The uses for RSS are expanding daily. Take a closer look at how various industries are using the benefits of RSS in their businesses.</description>
+            <link>http://www.feedforall.com/industry-solutions.htm</link>
+        </item>
+        <item>
+            <title>RSS Solutions for Restaurants</title>
+            <description>FeedForAll helps Restaurant's communicate with customers. Let your customers know the latest specials or events.  RSS feed uses include:Daily Specials  Entertainment  Calendar of Events</description>
+            <link>http://www.feedforall.com/restaurant.htm</link>
+        </item>
+        <item>
+            <title>RSS Solutions for Schools and Colleges</title>
+            <description>FeedForAll helps Educational Institutions communicate with students about school wide activities, events, and schedules.  RSS feed uses include:Homework Assignments  School Cancellations  Calendar of Events  Sports Scores  Clubs/Organization Meetings  Lunches Menus</description>
+            <link>http://www.feedforall.com/schools.htm</link>
+        </item>
+        <item>
+            <title>RSS Solutions for Computer Service Companies</title>
+            <description>FeedForAll helps Computer Service Companies communicate with clients about cyber security and related issues.   Uses include:Cyber Security Alerts  Specials Job Postings</description>
+            <link>http://www.feedforall.com/computer-service.htm</link>
+        </item>
+        <item>
+            <title>RSS Solutions for Politicians</title>
+            <description>FeedForAll helps Politicians communicate with the general public about positions on various issues, and keep the community notified of their schedule.   Uses Include:Blogs Speaking Engagements  Statements</description>
+            <link>http://www.feedforall.com/politics.htm</link>
+        </item>
+        <item>
+            <title>RSS Solutions for Meteorologists</title>
+            <description>FeedForAll helps Meteorologists communicate with the general public about storm warnings and weather alerts, in specific regions. Using RSS meteorologists are able to quickly disseminate urgent and life threatening weather warnings.   Uses Include:Weather Alerts Plotting Storms School Cancellations</description>
+            <link>http://www.feedforall.com/weather.htm</link>
+        </item>
+        <item>
+            <title>RSS Solutions for Realtors Real Estate Firms</title>
+            <description>FeedForAll helps Realtors and Real Estate companies communicate with clients informing them of newly available properties, and open house announcements. RSS helps to reach a targeted audience and spread the word in an inexpensive, professional manner. Feeds can be used for:Open House Dates New Properties For Sale Mortgage Rates</description>
+            <link>http://www.feedforall.com/real-estate.htm</link>
+        </item>
+        <item>
+            <title>RSS Solutions for Banks / Mortgage Companies</title>
+            <description>FeedForAll helps Banks, Credit Unions and Mortgage companies communicate with the general public about rate changes in a prompt and professional manner.   Uses include: Mortgage Rates Foreign Exchange Rates  Bank Rates Specials</description>
+            <link>http://www.feedforall.com/banks.htm</link>
+        </item>
+        <item>
+            <title>RSS Solutions for Law Enforcement</title>
+            <description>FeedForAll helps Law Enforcement Professionals communicate with the general public and other agencies in a prompt and efficient manner. Using RSS police are able to quickly disseminate urgent and life threatening information.   Uses include: Amber Alerts Offender Community Notification  Weather Alerts  Scheduling  Security Alerts  Police Report  Meetings</description>
+            <link>http://www.feedforall.com/law-enforcement.htm</link>
+        </item>
+    </channel>
+</rss>

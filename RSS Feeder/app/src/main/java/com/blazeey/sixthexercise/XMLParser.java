@@ -1,5 +1,6 @@
 package com.blazeey.sixthexercise;
 
+import android.content.Context;
 import android.os.AsyncTask;
 import android.util.Log;
 import android.util.Xml;
@@ -18,23 +19,29 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by venki on 7/1/18.
- */
-
 public class XMLParser {
     private List<Item> itemList;
     private URL url;
-    public XMLParser(URL url) {
+    private Context context;
+
+    public XMLParser(URL url, Context context) {
         this.itemList = new ArrayList<>();
         this.url = url;
+        this.context = context;
     }
 
     public void startParse(){
+//
+//        BackgroundTask backgroundTask = new BackgroundTask();
+//        backgroundTask.execute(url.toString());
+//        Log.v("Back","started back");
 
-        BackgroundTask backgroundTask = new BackgroundTask();
-        backgroundTask.execute(url.toString());
-        Log.v("Back","started back");
+        try {
+            InputStream inputStream = context.getAssets().open("SampleRSS.xml");
+            parseXML(inputStream);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     public void parseXML(InputStream inputStream){
@@ -76,8 +83,9 @@ public class XMLParser {
                     if(xmlPullParser.getName().equals("item")){
 
                         Log.v("TAG","item");
-                        Item item = new Item(title,description,new URL(link));
+                        Item item = new Item(title,description,link);
                         itemList.add(item);
+                        Log.v("ITEM ADDED",item.toString()+item.toString().length());
                         isItem = false;
                     }
                 }
@@ -86,14 +94,20 @@ public class XMLParser {
                     if(element.equals("title")){
                         Log.v("TAG","title");
                         title = xmlPullParser.getText();
+                        Log.v("Text",xmlPullParser.getText());
+                        element = "";
                     }
                     else if(element.equals("link")){
                         Log.v("TAG","link");
                         link = xmlPullParser.getText();
+                        Log.v("Text",xmlPullParser.getText());
+                        element = "";
                     }
                     else if(element.equals("description")){
                         Log.v("TAG","description");
                         description = xmlPullParser.getText();
+                        Log.v("Text",xmlPullParser.getText());
+                        element = "";
                     }
                 }
 
@@ -123,12 +137,15 @@ public class XMLParser {
 
         private XmlPullParserFactory xmlPullParserFactory;
         private XmlPullParser xmlPullParser;
+
         @Override
         protected void onPreExecute() {
             try {
+
                 xmlPullParserFactory = XmlPullParserFactory.newInstance();
                 xmlPullParser = xmlPullParserFactory.newPullParser();
                 xmlPullParser.setFeature(XmlPullParser.FEATURE_PROCESS_NAMESPACES,false);
+
             } catch (XmlPullParserException e) {
                 e.printStackTrace();
             }

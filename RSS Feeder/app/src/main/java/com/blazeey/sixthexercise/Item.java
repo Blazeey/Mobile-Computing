@@ -1,20 +1,21 @@
 package com.blazeey.sixthexercise;
 
-import java.net.URL;
 
 /**
- * Created by venki on 7/1/18.
+ * Created by t4 on 1/30/2018.
  */
-
 public class Item {
     private String title;
     private String description;
-    private URL url;
+    private String link;
 
-    public Item(String title, String description, URL url) {
+    public Item() {
+    }
+
+    public Item(String title, String description, String String) {
         this.title = title;
         this.description = description;
-        this.url = url;
+        this.link = String;
     }
 
     public String getTitle() {
@@ -33,11 +34,15 @@ public class Item {
         this.description = description;
     }
 
-    public URL getUrl() {
-        return url;
+    public String getLink() {
+        return link;
     }
 
-    public void setUrl(URL url) {
-        this.url = url;
+    public void setLink(String link) {
+        this.link = link;
+    }
+
+    public String toString(){
+        return title+","+link+","+description;
     }
 }
