@@ -60,6 +60,7 @@ public class MainActivity extends AppCompatActivity {
         websiteData = findViewById(R.id.website_data);
         websiteURL = findViewById(R.id.website);
         button = findViewById(R.id.goURL);
+
         handler.postDelayed(circularRunnable,500);
 
         button.setOnClickListener(new View.OnClickListener() {
