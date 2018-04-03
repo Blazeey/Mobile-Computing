@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.vsundar17697.attendance_manager.RetrieveActivity">
+
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:rowCount="6"
+        android:columnCount="6"
+        android:orientation="vertical">
+
+        <TextView
+            android:text="Enter Details To Retrieve"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_height="0dp"
+            android:layout_width="0dp"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:layout_marginTop="30sp"/>
+
+
+        <GridLayout
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:columnCount="4"
+            android:rowCount="1">
+            <TextView
+                android:text="Name"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_columnWeight="1"
+                android:textSize="20sp"
+                />
+
+            <EditText
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_columnWeight="3"
+                android:id="@+id/name"
+                />
+        </GridLayout>
+
+        <GridLayout
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:columnCount="4"
+            android:rowCount="1">
+            <TextView
+                android:text="Gender"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_columnWeight="1"
+                android:textSize="20sp"
+                />
+
+            <EditText
+                android:id="@+id/gender"
+                android:layout_columnWeight="3"
+                android:layout_height="wrap_content"
+                android:layout_width="0sp"/>
+
+        </GridLayout>
+
+        <GridLayout
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:columnCount="4"
+            android:rowCount="1">
+            <TextView
+                android:text="Department"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_columnWeight="1"
+                android:textSize="18sp"
+                />
+
+            <EditText
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_columnWeight="3"
+                android:id="@+id/dept"
+                />
+        </GridLayout>
+
+        <GridLayout
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:columnCount="4"
+            android:rowCount="1">
+
+            <TextView
+                android:text="Phone Number"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_columnWeight="1"
+                android:textSize="20sp"
+                />
+
+            <EditText
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:inputType="phone"
+                android:layout_columnWeight="3"
+                android:id="@+id/ph"
+                />
+
+        </GridLayout>
+
+        <GridLayout
+            android:layout_columnWeight="2"
+            android:layout_rowWeight="1"
+            android:layout_height="0dp"
+            android:layout_width="0dp">
+
+            <Button
+                android:text="Submit"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:id="@+id/submit"/>
+
+            <Button
+                android:text="Next"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:id="@+id/clear"/>
+
+        </GridLayout>
+
+
+
+    </GridLayout>
+
+
+</LinearLayout>

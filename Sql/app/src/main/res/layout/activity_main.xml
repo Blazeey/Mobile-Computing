@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.vsundar17697.attendance_manager.MainActivity"
+    android:orientation="vertical">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="6"
+        android:rowCount="6"
+        android:orientation="vertical">
+
+        <TextView android:layout_height="0dp"
+            android:layout_width="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:text="Select Option"
+            android:textSize="50sp"
+            android:textAlignment="center"
+            android:layout_marginTop="30sp"
+            android:id="@+id/select_opt"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:text="Create"
+            android:textAlignment="center"
+            android:layout_marginTop="10sp"
+            android:textSize="20sp"
+            android:id="@+id/Create"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:text="Insert"
+            android:textAlignment="center"
+            android:layout_marginTop="10sp"
+            android:textSize="20sp"
+            android:id="@+id/Insert"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:text="Update"
+            android:textAlignment="center"
+            android:layout_marginTop="10sp"
+            android:textSize="20sp"
+            android:id="@+id/Update"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:text="Delete"
+            android:textAlignment="center"
+            android:layout_marginTop="10sp"
+            android:textSize="20sp"
+            android:id="@+id/Delete"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:text="Retrieve"
+            android:textAlignment="center"
+            android:layout_marginTop="10sp"
+            android:textSize="20sp"
+            android:id="@+id/Retrieve"/>
+    </GridLayout>
+
+
+</LinearLayout>
